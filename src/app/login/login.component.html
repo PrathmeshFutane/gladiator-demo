@@ -1,0 +1,23 @@
+<div class="title has-text-centered">Login page</div>
+
+<div class="container"  style="padding: 50px; border: 2px solid grey; width: 50%;">
+    <form (ngSubmit)="login()" >
+        <div class="field " >
+            <label for=""  class="subtitle">username</label>
+            <input type="text" [(ngModel)]="username" name="username" class="input" style="width: 50%; display:flex;">
+        </div>
+
+        <div class="field " class="ubtitle">
+            <label for=""  >password</label>
+            <input type="text" [(ngModel)]="password" name="password" class="input" style="width: 50%; display:flex;">
+        </div>
+
+        <br>
+
+        <button type="submit" class="button is-success" style="margin: 20px;">Login</button>
+        <button type="reset" class="button is-danger" style="margin: 20px;">Reset</button>
+    </form>
+
+    <input type="file">
+  
+</div>

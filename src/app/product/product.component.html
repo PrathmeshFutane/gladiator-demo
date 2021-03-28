@@ -1,0 +1,18 @@
+
+<div class="container mt-4">
+    <div class="row" >
+        <div class="col-sm-12 col-md-6 col-lg-4" *ngFor="let i of data" >
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{{i['image']}}" width="100px;" height="100px" alt="Card image cap">
+                <div class="card-body">
+                    <span class="title">{{i['id']}}</span>
+                  <h5 class="card-title">{{i['title']}}</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, nihil.</p>
+                  <div class="content subtitle">Price {{i['price']}}</div>
+                  <button class="btn btn-primary" style="margin-left:10px;" (click)="load(i)">Buy</button>
+                  <button  class="btn btn-primary" style="margin-left:15px;" (click)="mycart(i)" >Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

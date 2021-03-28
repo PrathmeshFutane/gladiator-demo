@@ -1,0 +1,41 @@
+<div class="title has-text-centered">Register</div>
+
+<div class="container"  style="padding: 20px; border: 2px solid grey; width: 50%;">
+    <form (ngSubmit)="register()">
+
+        <div class="field " >
+            <label for="" class="subtitle">name</label>
+            <input [(ngModel)]="name" name="name" type="text" class="input" style="width: 50%; display:flex;">
+        </div>
+
+        <div class="field " class="ubtitle">
+            <label for="">email</label>
+            <input [(ngModel)]="email" name="email" type="email" class="input" style="width: 50%; display:flex;">
+        </div>
+
+        <div class="field " class="ubtitle">
+            <label for="">password</label>
+            <input [(ngModel)]="password" name="password" type="password" class="input" style="width: 50%; display:flex;">
+        </div>
+
+        <div class="field " class="ubtitle">
+            <label for=""> confirm password</label>
+            <input [(ngModel)]="confirmpassword" name="confirmpassword" type="password" class="input" style="width: 50%; display:flex;">
+        </div>
+
+        <div class="field " class="ubtitle">
+            <label for="">address</label>
+            <input [(ngModel)]="address" name="address" type="text" class="input" style="width: 50%; display:flex;">
+        </div>
+
+        <div class="field " class="ubtitle">
+            <label for="">mobile</label>
+            <input [(ngModel)]="mobile" name="mobile" type="number" class="input" style="width: 50%; display:flex;">
+        </div>
+        <br>
+        <button type="submit" class="button is-success" style="margin: 20px;">Register</button>
+        <button type="reset" class="button is-danger" style="margin: 20px;">Reset</button>
+    </form>
+        
+  
+</div>
