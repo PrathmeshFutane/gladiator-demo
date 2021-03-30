@@ -12,6 +12,7 @@ export class AppComponent {
     console.log("muskaan pansare");
     console.log("iqra shaikh");
     console.log("prathmesh");
+    console.log("shreyash");
   }
   title = 'shopping-demo';
   
