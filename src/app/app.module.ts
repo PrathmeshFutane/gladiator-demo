@@ -13,6 +13,8 @@ import { FormsModule } from '@angular/forms';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { HomeComponent } from './home/home.component';
+import { AdminComponent } from './admin/admin.component';
+import { RetailerComponent } from './retailer/retailer.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { HomeComponent } from './home/home.component';
     MycartComponent,
     CheckoutComponent,
     PagenotfoundComponent,
-    HomeComponent
+    HomeComponent,
+    AdminComponent,
+    RetailerComponent
   ],
   imports: [
     BrowserModule,

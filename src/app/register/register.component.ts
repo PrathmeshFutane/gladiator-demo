@@ -30,9 +30,9 @@ export class RegisterComponent implements OnInit {
       "address": this.address
     }
     let url = "http://httpbin.org/post";
+    
     this.http.post(url, this.registerobj).toPromise().then(data => {
-      console.log("response from server " + JSON.stringify(data));
-      
+      console.log("response from server " + JSON.stringify(data));      
       console.log(data['name']);
     })
     console.log(this.registerobj);

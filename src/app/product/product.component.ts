@@ -33,12 +33,20 @@ export class ProductComponent implements OnInit {
   mycart(i) {
     //console.log(i);
     this.mycartobj.push(i);
-    console.log(this.mycartobj);
+    //console.log(this.mycartobj);
     this.shared.setMycart(this.mycartobj);
+    if (sessionStorage.getItem("mycart") != null) {
+      //console.log(sessionStorage.getItem("mycart"));
+      let items = JSON.parse(sessionStorage.getItem("mycart"));
+      //console.log(items[0]["id"]);
+      for (let i of items) {
+        console.log(i['id'] + " new");
+      }
+    }
     sessionStorage.setItem("mycart", JSON.stringify(this.mycartobj));
   }
 
-  load(i: any) {
+  buy(i: any) {
     console.log("done");
     console.log(i);
     this.router.navigate(["checkout"]);
